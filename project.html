@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Review App</title>
+  <link rel="stylesheet" href="project.css">
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to Movie TV and Review Platform</h1>
+    <input type="text" id="search-input" placeholder="Search for movies...">
+    <button id="search-btn" class="stylish-btn">Search</button>
+    <button id="category-btn" class="stylish-btn">Categories</button>
+    <button id="top-rated-btn" class="stylish-btn">Top Rated</button>
+    <button id="contact-us-btn" class="stylish-btn">Contact Us</button>
+  </header>
+
+  <section id="categories-section" class="hidden">
+    <button id="cancel-category-btn" class="stylish-btn">Close Categories</button>
+    <div id="categories-grid"></div>
+  </section>
+
+  <div id="movies-grid"></div>
+
+  <div id="contact-form-popup" class="hidden">
+    <div class="popup-content">
+      <h2>Contact Us</h2>
+      <form id="contact-form">
+        <input type="text" placeholder="Your Name" id="contact-name" required />
+        <input type="email" placeholder="Your Email" id="contact-email" required />
+        <textarea placeholder="Your Message" id="contact-message" required></textarea>
+        <button type="submit" class="stylish-btn">Submit</button>
+        <button type="button" class="cancel-btn" id="cancel-contact-btn">Cancel</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Movie TV and Review Platform | All Rights Reserved</p>
+    <p>Follow us on social media for updates!</p>
+    <div>
+      <a href="https://www.facebook.com" target="_blank">Facebook</a> | 
+      <a href="https://www.instagram.com" target="_blank">Instagram</a> | 
+      <a href="https://www.twitter.com" target="_blank">Twitter</a>
+    </div>
+  </footer>
+
+  <script src="project.js"></script>
+</body>
+</html>
